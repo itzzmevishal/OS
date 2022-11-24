@@ -1,3 +1,5 @@
+//Write and read two messages through the pipe using parent and chile process.
+
 #include<stdio.h>
 #include<unistd.h>
 int main()

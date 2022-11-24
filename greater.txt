@@ -3,11 +3,11 @@ b=10
 c=1
 if [[ $b -gt $c ]]  && [[ $b -gt $a ]]
 then
-        echo "b is greater "
+        echo "$b is greater "
 elif [[ $a -gt $b ]] && [[ $a -gt $c ]]
 then
-        echo "a is greater "
+        echo "$a is greater "
 elif [[ $c -gt $b ]] && [[ $c -gt $a ]]
 then
-        echo "c is greater "
+        echo "$c is greater "
 fi

@@ -1,3 +1,5 @@
+// Achieving to a communication using pipes. 
+
 #include<stdio.h>
 #include<unistd.h>
 int main()

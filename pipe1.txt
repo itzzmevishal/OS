@@ -1,9 +1,11 @@
+//Program to read and write message using pipe
+
 #include<stdio.h>
 #include<unistd.h>
 int main()
 {
         int pipefds[1],returnstatus;
-        char writemessage[2][20]={"hi","Hello"};
+        char writemessage[2][20]={"Hi","Hello"};
         char readmessage[20];
         if( returnstatus == -1)
         {
@@ -18,5 +20,4 @@ int main()
                         read(pipefds[1],readmessage,sizeof(readmessage));
                         return 0;
 
-}
-~      
+}     
