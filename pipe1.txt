@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<unistd.h>
+int main()
+{
+        int pipefds[1],returnstatus;
+        char writemessage[2][20]={"hi","Hello"};
+        char readmessage[20];
+        if( returnstatus == -1)
+        {
+                printf("Unable");
+        }
+        printf("Writing to pipe M1 is %s\n",writemessage[0]);
+        write(pipefds[1],writemessage[0],sizeof(writemessage[0]));
+                        read(pipefds[1],readmessage,sizeof(readmessage));
+                        printf("Reading from pipe -M1 is %s\n",readmessage);
+                        printf("Writing to pipe M2 is %s\n",writemessage[1]);
+                        write(pipefds[1],writemessage[1],sizeof(writemessage[1]));
+                        read(pipefds[1],readmessage,sizeof(readmessage));
+                        return 0;
+
+}
+~      
